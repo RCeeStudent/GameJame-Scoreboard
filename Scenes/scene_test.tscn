@@ -1,0 +1,534 @@
+[gd_scene format=3 uid="uid://chgnot3r1qxsn"]
+
+[ext_resource type="PackedScene" uid="uid://c84w8lwe1qmh8" path="res://Objects/player.tscn" id="1_3q13h"]
+[ext_resource type="PackedScene" uid="uid://chy2ymw1ngwso" path="res://Objects/block.tscn" id="2_gtanh"]
+[ext_resource type="PackedScene" uid="uid://gl1xwj6080gq" path="res://Objects/scoreboard.tscn" id="3_t0d6o"]
+[ext_resource type="PackedScene" uid="uid://f511wue0uvfd" path="res://Objects/coin.tscn" id="4_12oix"]
+
+[node name="SceneTest" type="Node2D" unique_id=2126755794]
+
+[node name="Player" parent="." unique_id=241064687 instance=ExtResource("1_3q13h")]
+position = Vector2(352, 160)
+
+[node name="Room1" type="Node" parent="." unique_id=1033766029]
+
+[node name="World" type="Node2D" parent="Room1" unique_id=1428928287]
+
+[node name="Block" parent="Room1/World" unique_id=1450679212 instance=ExtResource("2_gtanh")]
+position = Vector2(16, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block2" parent="Room1/World" unique_id=16580562 instance=ExtResource("2_gtanh")]
+position = Vector2(48, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block3" parent="Room1/World" unique_id=716194029 instance=ExtResource("2_gtanh")]
+position = Vector2(80, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block4" parent="Room1/World" unique_id=1718918228 instance=ExtResource("2_gtanh")]
+position = Vector2(112, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block5" parent="Room1/World" unique_id=1513956864 instance=ExtResource("2_gtanh")]
+position = Vector2(144, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block6" parent="Room1/World" unique_id=548750173 instance=ExtResource("2_gtanh")]
+position = Vector2(176, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block7" parent="Room1/World" unique_id=1185101436 instance=ExtResource("2_gtanh")]
+position = Vector2(208, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block8" parent="Room1/World" unique_id=464449781 instance=ExtResource("2_gtanh")]
+position = Vector2(240, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block9" parent="Room1/World" unique_id=604767366 instance=ExtResource("2_gtanh")]
+position = Vector2(272, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block10" parent="Room1/World" unique_id=550690199 instance=ExtResource("2_gtanh")]
+position = Vector2(304, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block11" parent="Room1/World" unique_id=418414567 instance=ExtResource("2_gtanh")]
+position = Vector2(336, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block12" parent="Room1/World" unique_id=1479278156 instance=ExtResource("2_gtanh")]
+position = Vector2(368, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block13" parent="Room1/World" unique_id=882376028 instance=ExtResource("2_gtanh")]
+position = Vector2(400, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block14" parent="Room1/World" unique_id=1707245378 instance=ExtResource("2_gtanh")]
+position = Vector2(432, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block15" parent="Room1/World" unique_id=405010438 instance=ExtResource("2_gtanh")]
+position = Vector2(464, 16)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block16" parent="Room1/World" unique_id=1000661531 instance=ExtResource("2_gtanh")]
+position = Vector2(16, 48)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block17" parent="Room1/World" unique_id=1878273495 instance=ExtResource("2_gtanh")]
+position = Vector2(16, 80)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block18" parent="Room1/World" unique_id=1413538999 instance=ExtResource("2_gtanh")]
+position = Vector2(16, 112)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block19" parent="Room1/World" unique_id=1877042158 instance=ExtResource("2_gtanh")]
+position = Vector2(16, 144)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block20" parent="Room1/World" unique_id=1829773785 instance=ExtResource("2_gtanh")]
+position = Vector2(16, 176)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block23" parent="Room1/World" unique_id=743558711 instance=ExtResource("2_gtanh")]
+position = Vector2(16, 272)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block24" parent="Room1/World" unique_id=1742601113 instance=ExtResource("2_gtanh")]
+position = Vector2(48, 272)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block33" parent="Room1/World" unique_id=1251677690 instance=ExtResource("2_gtanh")]
+position = Vector2(336, 272)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block34" parent="Room1/World" unique_id=1408540074 instance=ExtResource("2_gtanh")]
+position = Vector2(368, 272)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block35" parent="Room1/World" unique_id=702799526 instance=ExtResource("2_gtanh")]
+position = Vector2(400, 272)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block36" parent="Room1/World" unique_id=1801416412 instance=ExtResource("2_gtanh")]
+position = Vector2(432, 272)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block37" parent="Room1/World" unique_id=820274963 instance=ExtResource("2_gtanh")]
+position = Vector2(464, 272)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block40" parent="Room1/World" unique_id=2051401101 instance=ExtResource("2_gtanh")]
+position = Vector2(464, 176)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block41" parent="Room1/World" unique_id=1477869921 instance=ExtResource("2_gtanh")]
+position = Vector2(464, 144)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block42" parent="Room1/World" unique_id=1681345074 instance=ExtResource("2_gtanh")]
+position = Vector2(464, 112)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block43" parent="Room1/World" unique_id=1839682049 instance=ExtResource("2_gtanh")]
+position = Vector2(464, 80)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Block44" parent="Room1/World" unique_id=1818635848 instance=ExtResource("2_gtanh")]
+position = Vector2(464, 48)
+blockColor = Color(255.01402, 255.01402, 255.01402, 1)
+
+[node name="Scoreboard" parent="Room1" unique_id=1504872124 instance=ExtResource("3_t0d6o")]
+position = Vector2(64, 256)
+digits = 8
+
+[node name="Coin" parent="Room1" unique_id=698389094 instance=ExtResource("4_12oix")]
+position = Vector2(400, 224)
+
+[node name="Room2" type="Node" parent="." unique_id=2142604331]
+
+[node name="Block" parent="Room2" unique_id=1434660738 instance=ExtResource("2_gtanh")]
+position = Vector2(496, 16)
+
+[node name="Block2" parent="Room2" unique_id=1848022672 instance=ExtResource("2_gtanh")]
+position = Vector2(592, 368)
+
+[node name="Block3" parent="Room2" unique_id=1219139291 instance=ExtResource("2_gtanh")]
+position = Vector2(496, 272)
+
+[node name="Block4" parent="Room2" unique_id=591944375 instance=ExtResource("2_gtanh")]
+position = Vector2(528, 304)
+
+[node name="Block5" parent="Room2" unique_id=85373071 instance=ExtResource("2_gtanh")]
+position = Vector2(624, 400)
+
+[node name="Block7" parent="Room2" unique_id=272508123 instance=ExtResource("2_gtanh")]
+position = Vector2(656, 400)
+
+[node name="Block8" parent="Room2" unique_id=1807732694 instance=ExtResource("2_gtanh")]
+position = Vector2(688, 400)
+
+[node name="Block9" parent="Room2" unique_id=927504505 instance=ExtResource("2_gtanh")]
+position = Vector2(720, 400)
+
+[node name="Block10" parent="Room2" unique_id=1711427539 instance=ExtResource("2_gtanh")]
+position = Vector2(752, 400)
+
+[node name="Block52" parent="Room2" unique_id=366066938 instance=ExtResource("2_gtanh")]
+position = Vector2(656, 240)
+
+[node name="Block53" parent="Room2" unique_id=1577893210 instance=ExtResource("2_gtanh")]
+position = Vector2(688, 240)
+
+[node name="Block54" parent="Room2" unique_id=1994600159 instance=ExtResource("2_gtanh")]
+position = Vector2(720, 240)
+
+[node name="Block55" parent="Room2" unique_id=1624959334 instance=ExtResource("2_gtanh")]
+position = Vector2(752, 240)
+
+[node name="Block56" parent="Room2" unique_id=1392962150 instance=ExtResource("2_gtanh")]
+position = Vector2(816, 176)
+
+[node name="Block57" parent="Room2" unique_id=1446287948 instance=ExtResource("2_gtanh")]
+position = Vector2(848, 176)
+
+[node name="Block58" parent="Room2" unique_id=1315596798 instance=ExtResource("2_gtanh")]
+position = Vector2(880, 176)
+
+[node name="Block59" parent="Room2" unique_id=982911539 instance=ExtResource("2_gtanh")]
+position = Vector2(912, 176)
+
+[node name="Block11" parent="Room2" unique_id=538548490 instance=ExtResource("2_gtanh")]
+position = Vector2(784, 400)
+
+[node name="Block12" parent="Room2" unique_id=1871845925 instance=ExtResource("2_gtanh")]
+position = Vector2(816, 400)
+
+[node name="Block13" parent="Room2" unique_id=631494401 instance=ExtResource("2_gtanh")]
+position = Vector2(848, 400)
+
+[node name="Block14" parent="Room2" unique_id=51674837 instance=ExtResource("2_gtanh")]
+position = Vector2(880, 400)
+
+[node name="Block15" parent="Room2" unique_id=1195091365 instance=ExtResource("2_gtanh")]
+position = Vector2(912, 400)
+
+[node name="Block16" parent="Room2" unique_id=1788995107 instance=ExtResource("2_gtanh")]
+position = Vector2(944, 400)
+
+[node name="Block17" parent="Room2" unique_id=321215050 instance=ExtResource("2_gtanh")]
+position = Vector2(976, 368)
+
+[node name="Block18" parent="Room2" unique_id=197079369 instance=ExtResource("2_gtanh")]
+position = Vector2(976, 400)
+
+[node name="Block19" parent="Room2" unique_id=569339858 instance=ExtResource("2_gtanh")]
+position = Vector2(976, 336)
+
+[node name="Block20" parent="Room2" unique_id=554394622 instance=ExtResource("2_gtanh")]
+position = Vector2(976, 304)
+
+[node name="Block21" parent="Room2" unique_id=304903970 instance=ExtResource("2_gtanh")]
+position = Vector2(976, 272)
+
+[node name="Block22" parent="Room2" unique_id=305495917 instance=ExtResource("2_gtanh")]
+position = Vector2(1008, 272)
+
+[node name="Block23" parent="Room2" unique_id=1928389338 instance=ExtResource("2_gtanh")]
+position = Vector2(1040, 272)
+
+[node name="Block24" parent="Room2" unique_id=945438649 instance=ExtResource("2_gtanh")]
+position = Vector2(1072, 272)
+
+[node name="Block25" parent="Room2" unique_id=1351360700 instance=ExtResource("2_gtanh")]
+position = Vector2(1104, 272)
+
+[node name="Block26" parent="Room2" unique_id=594841001 instance=ExtResource("2_gtanh")]
+position = Vector2(1136, 272)
+
+[node name="Block27" parent="Room2" unique_id=675447900 instance=ExtResource("2_gtanh")]
+position = Vector2(1136, 176)
+
+[node name="Block28" parent="Room2" unique_id=1132716891 instance=ExtResource("2_gtanh")]
+position = Vector2(1136, 144)
+
+[node name="Block29" parent="Room2" unique_id=1057050270 instance=ExtResource("2_gtanh")]
+position = Vector2(1136, 112)
+
+[node name="Block30" parent="Room2" unique_id=95943824 instance=ExtResource("2_gtanh")]
+position = Vector2(1136, 80)
+
+[node name="Block31" parent="Room2" unique_id=889230338 instance=ExtResource("2_gtanh")]
+position = Vector2(1136, 48)
+
+[node name="Block32" parent="Room2" unique_id=2057000015 instance=ExtResource("2_gtanh")]
+position = Vector2(1136, 16)
+
+[node name="Block33" parent="Room2" unique_id=1880552933 instance=ExtResource("2_gtanh")]
+position = Vector2(1104, 16)
+
+[node name="Block34" parent="Room2" unique_id=1503889663 instance=ExtResource("2_gtanh")]
+position = Vector2(1072, 16)
+
+[node name="Block35" parent="Room2" unique_id=1844476720 instance=ExtResource("2_gtanh")]
+position = Vector2(1040, 16)
+
+[node name="Block36" parent="Room2" unique_id=472189818 instance=ExtResource("2_gtanh")]
+position = Vector2(1008, 16)
+
+[node name="Block37" parent="Room2" unique_id=443692719 instance=ExtResource("2_gtanh")]
+position = Vector2(976, 16)
+
+[node name="Block38" parent="Room2" unique_id=735018570 instance=ExtResource("2_gtanh")]
+position = Vector2(944, 16)
+
+[node name="Block39" parent="Room2" unique_id=280633667 instance=ExtResource("2_gtanh")]
+position = Vector2(912, 16)
+
+[node name="Block40" parent="Room2" unique_id=1466983253 instance=ExtResource("2_gtanh")]
+position = Vector2(880, 16)
+
+[node name="Block41" parent="Room2" unique_id=987615461 instance=ExtResource("2_gtanh")]
+position = Vector2(848, 16)
+
+[node name="Block42" parent="Room2" unique_id=995497640 instance=ExtResource("2_gtanh")]
+position = Vector2(816, 16)
+
+[node name="Block43" parent="Room2" unique_id=1709148781 instance=ExtResource("2_gtanh")]
+position = Vector2(784, 16)
+
+[node name="Block44" parent="Room2" unique_id=1550975368 instance=ExtResource("2_gtanh")]
+position = Vector2(752, 16)
+
+[node name="Block45" parent="Room2" unique_id=307542465 instance=ExtResource("2_gtanh")]
+position = Vector2(720, 16)
+
+[node name="Block46" parent="Room2" unique_id=1092910915 instance=ExtResource("2_gtanh")]
+position = Vector2(688, 16)
+
+[node name="Block47" parent="Room2" unique_id=1399977239 instance=ExtResource("2_gtanh")]
+position = Vector2(656, 16)
+
+[node name="Block48" parent="Room2" unique_id=280818787 instance=ExtResource("2_gtanh")]
+position = Vector2(624, 16)
+
+[node name="Block49" parent="Room2" unique_id=748213227 instance=ExtResource("2_gtanh")]
+position = Vector2(592, 16)
+
+[node name="Block50" parent="Room2" unique_id=1315602599 instance=ExtResource("2_gtanh")]
+position = Vector2(560, 16)
+
+[node name="Block51" parent="Room2" unique_id=215850266 instance=ExtResource("2_gtanh")]
+position = Vector2(528, 16)
+
+[node name="Block6" parent="Room2" unique_id=930819010 instance=ExtResource("2_gtanh")]
+position = Vector2(560, 336)
+
+[node name="Coin2" parent="Room2" unique_id=1458427491 instance=ExtResource("4_12oix")]
+position = Vector2(704, 208)
+
+[node name="Coin3" parent="Room2" unique_id=1538244199 instance=ExtResource("4_12oix")]
+position = Vector2(864, 144)
+value = 8
+
+[node name="Coin4" parent="Room2" unique_id=1632912390 instance=ExtResource("4_12oix")]
+position = Vector2(1056, 240)
+value = 13
+
+[node name="Room3" type="Node" parent="." unique_id=940850662]
+
+[node name="Coin5" parent="Room3" unique_id=1095570418 instance=ExtResource("4_12oix")]
+position = Vector2(1392, 368)
+value = 50
+
+[node name="Block" parent="Room3" unique_id=1174038709 instance=ExtResource("2_gtanh")]
+position = Vector2(1168, 272)
+
+[node name="Block2" parent="Room3" unique_id=100770176 instance=ExtResource("2_gtanh")]
+position = Vector2(1200, 272)
+
+[node name="Block3" parent="Room3" unique_id=546660662 instance=ExtResource("2_gtanh")]
+position = Vector2(1232, 272)
+
+[node name="Block4" parent="Room3" unique_id=1860296289 instance=ExtResource("2_gtanh")]
+position = Vector2(1264, 304)
+
+[node name="Block5" parent="Room3" unique_id=1697764468 instance=ExtResource("2_gtanh")]
+position = Vector2(1296, 336)
+
+[node name="Block6" parent="Room3" unique_id=1879333569 instance=ExtResource("2_gtanh")]
+position = Vector2(1328, 368)
+
+[node name="Block11" parent="Room3" unique_id=2023888860 instance=ExtResource("2_gtanh")]
+position = Vector2(1360, 400)
+
+[node name="Block12" parent="Room3" unique_id=2110673470 instance=ExtResource("2_gtanh")]
+position = Vector2(1392, 400)
+
+[node name="Block13" parent="Room3" unique_id=1141438937 instance=ExtResource("2_gtanh")]
+position = Vector2(1424, 400)
+
+[node name="Block14" parent="Room3" unique_id=1169276444 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 400)
+
+[node name="Block15" parent="Room3" unique_id=1068731838 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 368)
+
+[node name="Block16" parent="Room3" unique_id=1409085549 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 336)
+
+[node name="Block17" parent="Room3" unique_id=1024302154 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 304)
+
+[node name="Block18" parent="Room3" unique_id=676116023 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 272)
+
+[node name="Block19" parent="Room3" unique_id=1735144790 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 240)
+
+[node name="Block20" parent="Room3" unique_id=1517844385 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 208)
+
+[node name="Block21" parent="Room3" unique_id=1999089599 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 176)
+
+[node name="Block22" parent="Room3" unique_id=964486668 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 144)
+
+[node name="Block23" parent="Room3" unique_id=391439317 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 112)
+
+[node name="Block24" parent="Room3" unique_id=1597211959 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 80)
+
+[node name="Block25" parent="Room3" unique_id=422245656 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 48)
+
+[node name="Block26" parent="Room3" unique_id=1717700706 instance=ExtResource("2_gtanh")]
+position = Vector2(1456, 16)
+
+[node name="Block27" parent="Room3" unique_id=874718470 instance=ExtResource("2_gtanh")]
+position = Vector2(1424, 16)
+
+[node name="Block28" parent="Room3" unique_id=1317058948 instance=ExtResource("2_gtanh")]
+position = Vector2(1392, 16)
+
+[node name="Block29" parent="Room3" unique_id=1663806241 instance=ExtResource("2_gtanh")]
+position = Vector2(1360, 16)
+
+[node name="Block30" parent="Room3" unique_id=1754964540 instance=ExtResource("2_gtanh")]
+position = Vector2(1328, 16)
+
+[node name="Block31" parent="Room3" unique_id=1102615386 instance=ExtResource("2_gtanh")]
+position = Vector2(1296, 16)
+
+[node name="Block32" parent="Room3" unique_id=2054482625 instance=ExtResource("2_gtanh")]
+position = Vector2(1264, 16)
+
+[node name="Block33" parent="Room3" unique_id=1341941465 instance=ExtResource("2_gtanh")]
+position = Vector2(1232, 16)
+
+[node name="Block34" parent="Room3" unique_id=1485134920 instance=ExtResource("2_gtanh")]
+position = Vector2(1200, 16)
+
+[node name="Block35" parent="Room3" unique_id=592371834 instance=ExtResource("2_gtanh")]
+position = Vector2(1168, 16)
+
+[node name="Room4" type="Node" parent="." unique_id=1432195368]
+
+[node name="Block" parent="Room4" unique_id=283207387 instance=ExtResource("2_gtanh")]
+position = Vector2(-16, 272)
+
+[node name="Block2" parent="Room4" unique_id=792618498 instance=ExtResource("2_gtanh")]
+position = Vector2(-48, 272)
+
+[node name="Block3" parent="Room4" unique_id=1804340097 instance=ExtResource("2_gtanh")]
+position = Vector2(-80, 272)
+
+[node name="Block4" parent="Room4" unique_id=1685259836 instance=ExtResource("2_gtanh")]
+position = Vector2(-112, 272)
+
+[node name="Block5" parent="Room4" unique_id=1383640357 instance=ExtResource("2_gtanh")]
+position = Vector2(-144, 272)
+
+[node name="Block6" parent="Room4" unique_id=996731818 instance=ExtResource("2_gtanh")]
+position = Vector2(-176, 272)
+
+[node name="Block7" parent="Room4" unique_id=815322086 instance=ExtResource("2_gtanh")]
+position = Vector2(-208, 272)
+
+[node name="Block8" parent="Room4" unique_id=1557006660 instance=ExtResource("2_gtanh")]
+position = Vector2(-240, 272)
+
+[node name="Block9" parent="Room4" unique_id=1747181615 instance=ExtResource("2_gtanh")]
+position = Vector2(-272, 272)
+
+[node name="Block10" parent="Room4" unique_id=397960331 instance=ExtResource("2_gtanh")]
+position = Vector2(-272, 240)
+
+[node name="Block11" parent="Room4" unique_id=869341605 instance=ExtResource("2_gtanh")]
+position = Vector2(-272, 208)
+
+[node name="Block12" parent="Room4" unique_id=702799540 instance=ExtResource("2_gtanh")]
+position = Vector2(-272, 176)
+
+[node name="Block13" parent="Room4" unique_id=1508208833 instance=ExtResource("2_gtanh")]
+position = Vector2(-272, 144)
+
+[node name="Block14" parent="Room4" unique_id=1456884876 instance=ExtResource("2_gtanh")]
+position = Vector2(-272, 112)
+
+[node name="Block15" parent="Room4" unique_id=481792377 instance=ExtResource("2_gtanh")]
+position = Vector2(-240, 112)
+
+[node name="Block16" parent="Room4" unique_id=1361471662 instance=ExtResource("2_gtanh")]
+position = Vector2(-208, 112)
+
+[node name="Block17" parent="Room4" unique_id=1046665423 instance=ExtResource("2_gtanh")]
+position = Vector2(-176, 112)
+
+[node name="Block18" parent="Room4" unique_id=1263787233 instance=ExtResource("2_gtanh")]
+position = Vector2(-144, 112)
+
+[node name="Block19" parent="Room4" unique_id=1475484104 instance=ExtResource("2_gtanh")]
+position = Vector2(-112, 112)
+
+[node name="Block20" parent="Room4" unique_id=590606916 instance=ExtResource("2_gtanh")]
+position = Vector2(-80, 112)
+
+[node name="Block21" parent="Room4" unique_id=705155530 instance=ExtResource("2_gtanh")]
+position = Vector2(-48, 112)
+
+[node name="Block22" parent="Room4" unique_id=1159731466 instance=ExtResource("2_gtanh")]
+position = Vector2(-16, 112)
+
+[node name="Control" type="Control" parent="Room4" unique_id=855622665]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -144.0
+offset_top = 176.0
+offset_right = -104.0
+offset_bottom = 216.0
+
+[node name="Label" type="Label" parent="Room4/Control" unique_id=462095836]
+layout_mode = 0
+offset_left = -32.0
+offset_right = 53.0
+offset_bottom = 23.0
+text = "U R WIN!!!!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Room4/Control" unique_id=705208204]
+layout_mode = 0
+offset_left = -96.0
+offset_top = 16.0
+offset_right = 120.0
+offset_bottom = 39.0
+text = "Coming to Ouya - 2029"
+horizontal_alignment = 1
+vertical_alignment = 1

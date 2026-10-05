@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://doysi0jgjxidg"]
+
+[ext_resource type="Texture2D" uid="uid://jqhvv2lh5yik" path="res://Sprites/score_block.png" id="1_8tvaq"]
+[ext_resource type="Script" uid="uid://cdpwaah68pjtm" path="res://Scripts/scrScoreBlock.gd" id="1_xlufb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fk8di"]
+size = Vector2(32, 32)
+
+[node name="ScoreBlock" type="StaticBody2D" unique_id=1275739032 node_paths=PackedStringArray("label", "collisionShape")]
+script = ExtResource("1_xlufb")
+label = NodePath("Control/label_number")
+collisionShape = NodePath("CollisionShape2D")
+
+[node name="Graphics" type="Sprite2D" parent="." unique_id=1665151690]
+modulate = Color(1, 1, 1, 0.43529412)
+position = Vector2(16, 16)
+texture = ExtResource("1_8tvaq")
+
+[node name="Control" type="Control" parent="." unique_id=1568836750]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 32.0
+offset_bottom = 32.0
+
+[node name="label_number" type="Label" parent="Control" unique_id=947382895]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 23
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=842232053]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_fk8di")

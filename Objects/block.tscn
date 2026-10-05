@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://chy2ymw1ngwso"]
+
+[ext_resource type="Texture2D" uid="uid://cndot86mecdu7" path="res://Sprites/white.png" id="1_jr0sv"]
+[ext_resource type="Script" uid="uid://10w4ftrswa2d" path="res://Scripts/scrBlockColor.gd" id="1_ngv4k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ld4qb"]
+size = Vector2(32, 32)
+
+[node name="Block" type="StaticBody2D" unique_id=1450679212 node_paths=PackedStringArray("spriteRenderer")]
+disable_mode = 1
+script = ExtResource("1_ngv4k")
+spriteRenderer = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=199482386]
+texture = ExtResource("1_jr0sv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=140732630]
+shape = SubResource("RectangleShape2D_ld4qb")

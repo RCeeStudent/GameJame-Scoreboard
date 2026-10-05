@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://gl1xwj6080gq"]
+
+[ext_resource type="Script" uid="uid://daini00gnd1tt" path="res://Scripts/scrScoreboardHandler.gd" id="1_bpsr3"]
+
+[node name="Scoreboard" type="Node2D" unique_id=1504872124]
+script = ExtResource("1_bpsr3")

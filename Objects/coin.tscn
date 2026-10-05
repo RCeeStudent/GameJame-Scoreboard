@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://f511wue0uvfd"]
+
+[ext_resource type="Script" uid="uid://drpqhovc1l64c" path="res://Scripts/scrCoinHandler.gd" id="1_6bv11"]
+[ext_resource type="Texture2D" uid="uid://nlyww4ad08xh" path="res://Sprites/coin.png" id="1_sulkx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fk8di"]
+radius = 17.0
+
+[node name="Coin" type="Area2D" unique_id=698389094]
+script = ExtResource("1_6bv11")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1753119696]
+shape = SubResource("CircleShape2D_fk8di")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=27668654]
+amount = 50
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 5.0
+initial_velocity_max = 67.0
+color = Color(1, 0.84705883, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1068154101]
+texture = ExtResource("1_sulkx")
+
+[node name="Control" type="Control" parent="." unique_id=1591818153]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+
+[node name="label_number" type="Label" parent="Control" unique_id=257175170]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
