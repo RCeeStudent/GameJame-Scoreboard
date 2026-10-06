@@ -4,6 +4,19 @@
 [ext_resource type="PackedScene" uid="uid://chy2ymw1ngwso" path="res://Objects/block.tscn" id="2_gtanh"]
 [ext_resource type="PackedScene" uid="uid://gl1xwj6080gq" path="res://Objects/scoreboard.tscn" id="3_t0d6o"]
 [ext_resource type="PackedScene" uid="uid://f511wue0uvfd" path="res://Objects/coin.tscn" id="4_12oix"]
+[ext_resource type="PackedScene" uid="uid://c011m1rvvf73" path="res://Objects/cameraHandler.tscn" id="5_2og8o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fk8di"]
+size = Vector2(464, 288)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_65re6"]
+size = Vector2(288, 192)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yi8op"]
+size = Vector2(669, 413)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2og8o"]
+size = Vector2(346, 416)
 
 [node name="SceneTest" type="Node2D" unique_id=2126755794]
 
@@ -148,6 +161,31 @@ digits = 8
 
 [node name="Coin" parent="Room1" unique_id=698389094 instance=ExtResource("4_12oix")]
 position = Vector2(400, 224)
+
+[node name="CameraHandler" parent="Room1" unique_id=533652572 node_paths=PackedStringArray("areaCamera") instance=ExtResource("5_2og8o")]
+areaCamera = NodePath("Camera2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room1/CameraHandler" unique_id=147153013]
+position = Vector2(232, 144)
+shape = SubResource("RectangleShape2D_fk8di")
+
+[node name="Camera2D" type="Camera2D" parent="Room1/CameraHandler" unique_id=928922690]
+position = Vector2(240, 144)
+enabled = false
+zoom = Vector2(2.345, 2.345)
+
+[node name="CameraHandler2" parent="Room1" unique_id=2106407660 node_paths=PackedStringArray("areaCamera") instance=ExtResource("5_2og8o")]
+position = Vector2(-464, 0)
+areaCamera = NodePath("Camera2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room1/CameraHandler2" unique_id=1142397660]
+position = Vector2(320, 192)
+shape = SubResource("RectangleShape2D_65re6")
+
+[node name="Camera2D" type="Camera2D" parent="Room1/CameraHandler2" unique_id=703309793]
+position = Vector2(336, 192)
+enabled = false
+zoom = Vector2(3.465, 3.465)
 
 [node name="Room2" type="Node" parent="." unique_id=2142604331]
 
@@ -339,7 +377,30 @@ value = 8
 position = Vector2(1056, 240)
 value = 13
 
+[node name="CameraHandler" parent="Room2" unique_id=932640403 node_paths=PackedStringArray("areaCamera") instance=ExtResource("5_2og8o")]
+position = Vector2(800, 208)
+areaCamera = NodePath("Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="Room2/CameraHandler" unique_id=886824122]
+enabled = false
+zoom = Vector2(1.73, 1.73)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room2/CameraHandler" unique_id=990460602]
+shape = SubResource("RectangleShape2D_yi8op")
+
 [node name="Room3" type="Node" parent="." unique_id=940850662]
+
+[node name="CameraHandler2" parent="Room3" unique_id=1687681995 node_paths=PackedStringArray("areaCamera") instance=ExtResource("5_2og8o")]
+position = Vector2(1472, 208)
+areaCamera = NodePath("Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="Room3/CameraHandler2" unique_id=240257150]
+enabled = false
+zoom = Vector2(1.73, 1.73)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room3/CameraHandler2" unique_id=1117491887]
+position = Vector2(-163, 0)
+shape = SubResource("RectangleShape2D_2og8o")
 
 [node name="Coin5" parent="Room3" unique_id=1095570418 instance=ExtResource("4_12oix")]
 position = Vector2(1392, 368)

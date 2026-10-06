@@ -1,10 +1,9 @@
-extends Node
+extends Area2D
 
-@export var value : int = 2;
+@export var areaCamera : Camera2D = null;
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$Control/label_number.text = str(value);
 	pass # Replace with function body.
 
 
@@ -14,7 +13,9 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	if(body.name.contains("Player")):
-		Globals.PLAYER_SCORE += value;
-		queue_free();
-		pass
+	if(body.name.to_lower().contains("player")):
+		if(Globals.CURRENT_CAMERA != null):
+			Globals.CURRENT_CAMERA.enabled = false
+			
+		Globals.CURRENT_CAMERA = areaCamera;
+		Globals.CURRENT_CAMERA.enabled = true

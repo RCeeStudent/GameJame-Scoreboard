@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c011m1rvvf73"]
+
+[ext_resource type="Script" uid="uid://cfrep77dqv0qf" path="res://Scripts/scrCameraHandler.gd" id="1_yfyiw"]
+
+[node name="CameraHandler" type="Area2D" unique_id=533652572]
+script = ExtResource("1_yfyiw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
