@@ -1,30 +1,41 @@
 extends Node2D
 
+## How many digits (blocks) can the handler have?
 @export var digits : int = 5;
+
+## What is the node used to create the blocks?
 const scoreblockNode = preload("res://Objects/scoreblock.tscn");
+
+## The [Array] of scoreblocks that exist.
 @export var scoreblocks : Array;
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	
+	# For every digit to create
 	for i in range(digits):
+		# Create the node
 		var node = scoreblockNode.instantiate();
+		# Add the node as a child of this
 		add_child(node);
+		# Adjust the node's position
 		node.position.x = (i * 32);
+		# Add the node to the array
 		scoreblocks.push_back(node);
+		# Set the value of the scoreblock to -1
 		node.value = -1;
-	
-	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	#var scoreToString : String = str(Globals.PLAYER_SCORE);
 	
+	# Create the string that represents the score.
+	#var scoreToString : String = str(Globals.PLAYER_SCORE);
 	var scoreToString : String = String.num_int64(Globals.PLAYER_SCORE, 2, false);
 	
+	# How many digits is the score?
 	var scoreSize : int = scoreToString.length();
 	
+	# Break the score down by digits.
 	var digit : int = -1;
 	var tens : int = -1;
 	var hundreds : int = -1;
@@ -34,6 +45,7 @@ func _process(delta: float) -> void:
 	var mill : int = -1;
 	var tenMil : int = -1;
 	
+	# Set the values of the digits
 	if(scoreSize >= 1):
 		digit = scoreToString[scoreSize - 1].to_int()
 		
@@ -58,6 +70,7 @@ func _process(delta: float) -> void:
 	if(scoreSize >= 8):
 		tenMil = scoreToString[scoreSize - 6].to_int()
 	
+	# Set the scoreblocks values
 	if((scoreblocks.size() - 1) >= 0):
 		scoreblocks[scoreblocks.size() - 1].value = digit
 		

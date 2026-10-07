@@ -1,14 +1,11 @@
 extends Node
 
+## The [Color] of the block
 @export var blockColor : Color = Color(255, 255, 255, 255);
+
+## The renderer for the sprite
 @export var spriteRenderer : Sprite2D;
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	# Set the colour of the sprite to be the block colour
 	spriteRenderer.modulate = blockColor;
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
